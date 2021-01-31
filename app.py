@@ -13,6 +13,9 @@ def getdef(search):
     return result
 
 ##todo - format the definition outputs more nicely.
+##todo - create menu options for settings
+##  users should be able to change filepath of dictionary json, the number of word recommendations they want returned, 
+##  and the sensitivy of the difflib get_close_matches fxn
 
 
 ## main app loop, infinite with a user input end condition
