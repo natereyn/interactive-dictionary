@@ -4,8 +4,6 @@ import difflib as dl
 ##imports dictionary data from json in common directory.
 dictionary_data = json.load(open("data.json"))
 
-
-
 def getdef(search):
     #fxn to return defns. Returns "Not Found" is word is not found.
     result = dictionary_data.get(search, "Not Found")
@@ -15,7 +13,6 @@ def getdef(search):
 ##todo - create menu options for settings
 ##  users should be able to change filepath of dictionary json, the number of word recommendations they want returned, 
 ##  and the sensitivy of the difflib get_close_matches fxn
-
 
 ## main app loop, infinite with a user input end condition
 while True:
@@ -78,6 +75,5 @@ while True:
                     if str(choice.lower()) == "n":
                         print("The word you're looking for was not found. Please try a new search.")
                         break      
-
                     else:
                         choice=input("Invalid choice, please choose 1-"+str(len(recommended))+", N if none: ")
