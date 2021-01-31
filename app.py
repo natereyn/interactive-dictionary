@@ -1,6 +1,5 @@
 import json
 import difflib as dl
-from os import O_TEMPORARY
 
 ##imports dictionary data from json in common directory.
 dictionary_data = json.load(open("data.json"))
